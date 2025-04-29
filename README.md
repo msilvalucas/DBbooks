@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# 📚 Biblioteca DB - Sistema de Gerenciamento de Livros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao projeto Biblioteca DB!
+Essa aplicação foi desenvolvida para ajudar a gestão de acervo de livros da Biblioteca DB, proporcionando uma maneira simples, rápida e eficiente de cadastrar, visualizar e gerenciar a disponibilidade dos livros.
 
-Currently, two official plugins are available:
+## ✨ Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A Biblioteca DB enfrentava dificuldades no gerenciamento de seu acervo, tornando a organização dos livros um desafio. Esta aplicação web foi desenvolvida para:
 
-## Expanding the ESLint configuration
+- Cadastrar novos livros no sistema.
+- Visualizar a lista de livros de maneira organizada e integrada ao backend.
+- Marcar livros como Disponíveis ou Emprestados de forma simples.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Cadastro de livros: formulário para adicionar novos livros ao catálogo.
+- Visualização do catálogo: exibição da lista de livros em cards organizados horizontalmente.
+- Controle de disponibilidade: marcação de livros como disponíveis ou emprestados, integrada com o backend.
+
+## 🛠️ Tecnologias Utilizadas
+
+- React – Biblioteca para construção da interface de usuário.
+- TypeScript – Tipagem estática para JavaScript.
+- React Router – Gerenciamento de rotas da aplicação.
+- Axios – Requisições HTTP para comunicação com o backend.
+- Formik – Gerenciamento de formulários de forma simples.
+- Yup – Validação de formulários.
+- CSS Modules – Estilização modularizada para componentes.
+
+## 🚀 Como rodar o projeto localmente
+
+```bash
+1. Clone o repositório:
+
+https://github.com/msilvalucas/DBbooks.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```
+2. Entre no diretório do projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+cd DBbooks
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```
+3. Instale as dependências:
+
+npm install
+# ou
+yarn install
+```
+
+```
+4. Inicie a aplicação:
+
+npm run dev
+# ou
+yarn dev
+```
+
+```
+5. Acesse em seu navegador:
+
+http://localhost:5173
 ```
