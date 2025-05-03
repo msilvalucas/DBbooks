@@ -17,6 +17,7 @@ export const SearchBar = ({ onSearch, debounceTime = 300 }: SearchBarProps) => {
 
   const handleKeyPress = (e: KeyboardEvent) => {
     if (e.key === "Enter") {
+      console.log("Opa, pressionou o enter!")
       handleSearch();
     }
   }
