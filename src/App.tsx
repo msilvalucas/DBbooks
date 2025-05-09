@@ -1,13 +1,14 @@
+import { BooksProvider } from './books'
+import { RouterProvider } from 'react-router'
+import { router } from './routes/routes'
+
 function App() {
+
   return (
     <>
-      <h1>DBbooks</h1>
-      <p>
-        Bem-vindo ao projeto Biblioteca DB! Essa aplicação foi desenvolvida para
-        ajudar a gestão de acervo de livros da Biblioteca DB, proporcionando uma
-        maneira simples, rápida e eficiente de cadastrar, visualizar e gerenciar
-        a disponibilidade dos livros.
-      </p>
+      <BooksProvider>
+        <RouterProvider router={router} />
+      </BooksProvider>
     </>
   );
 }
